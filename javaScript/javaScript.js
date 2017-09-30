@@ -40,6 +40,7 @@ function clickIndex(clickWhat){
 	}
 	iframe.scrolling="no"; 
 }
+/*
 function getData(){
 	var req=new XMLHttpRequest();
 	req.open=("get","C:\Users\Kevin_Chen\Desktop\網頁製作學習\text.html")
@@ -50,3 +51,4 @@ function getData(){
 	};
 	req.send();
 }
+*/
