@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"></meta>
+		
+		<script type="text/javaScript" src="IntroductionJS.js"></script>
+		
+		<style type="text/css">
+		.h1Style{
+			margin-left:60px;
+			margin-top:50px;
+			color:blue;
+			font-weight:bolder;
+		}
+		.titleStyle{
+			height:50px;
+			color:red;
+			margin-top:100px;
+			margin-left:100px;
+			font-size:20px;
+			font-weight:bold;
+		}
+		.buttonStyle{
+			width:150px;
+			margin-left:50px;
+			border-radius:15px;
+			font-size:20px;
+			font-weight:bold;
+		}
+		.boxStyle{
+			width:100px;
+			height:100px;
+			border:2px solid black;
+			background-color:#5599FF;
+			margin-left:150px;
+			margin-top:100px;
+		}
+		.canvasStyle{
+			border:2px solid black;
+			margin-left:150px;
+		}
+		</style>
+	</head>
+	
+	<body style="margin:0px; background-color:#eeeeee;">
+		<!-- 右邊資料區 -->
+		<h1 class="h1Style">CSS網頁進階前端工程實作測試</h1>
+		
+		<div class="titleStyle" style="margin-top:20px;">線性轉換Transform</div>	
+		<button class="buttonStyle" onclick="transform(1);">位移translate</button>
+		<button class="buttonStyle" onclick="transform(2);">縮放scale</button>
+		<button class="buttonStyle" onclick="transform(3);">旋轉rotate</button>
+		<button class="buttonStyle" onclick="transform(4);">歪斜skew</button>
+		<button class="buttonStyle" onclick="transform(5);">prototype</button>
+		<div id="transformBox" class="boxStyle"></div>
+		
+		<div class="titleStyle">Canvas繪圖</div>
+		<canvas id="canvasTable" width="1000px"	height="1000px" class="canvasStyle"></canvas>
+		
+		<div class="titleStyle">video影音撥放</div>
+		<video id="video" src="video.mp4" width="500px" height="350px" style="margin-left:150px;" controls>
+			Your browser does not support the video element.
+		</video>
+	</body>
+	
+</html>
