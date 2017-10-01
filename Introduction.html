@@ -35,10 +35,28 @@
 			background-color:#5599FF;
 			margin-left:150px;
 			margin-top:100px;
+			animation:blink 3s infinite;
 		}
 		.canvasStyle{
 			border:2px solid black;
 			margin-left:150px;
+		}
+		.D1{
+    width:100px;
+    height:100px;
+    background:red;
+    position:relative;
+    animation:move 5s infinite alternate; 
+}
+		
+		@keyframes blink{
+			0%{opacity:1}
+			50%{opacity:0.1}
+			100%{opacity:1}
+		}
+		@keyframes move{
+			0%{left:0%}
+			100%{left:100%}
 		}
 		</style>
 	</head>
@@ -62,6 +80,10 @@
 		<video id="video" src="element/video.mp4" width="500px" height="350px" style="margin-left:150px;" controls>
 			Your browser does not support the video element.
 		</video>
+		
+		<div style="width:700px;border:1px #ccc solid;padding:20px;">
+			<div id="D1" class="D1"></div>
+		</div>
 	</body>
 	
 </html>

@@ -1,27 +1,30 @@
-/*
-var testBoxAttribute=new Object();
-	testBoxAttribute.x=0;
-	testBoxAttribute.y=0;
-	testBoxAttribute.size=1;
-	testBoxAttribute.spanDeg=0;
-	testBoxAttribute.skewXDeg=0;
-	testBoxAttribute.skewYDeg=0;
-*/
 window.onload=function(){
 	var audio=document.getElementById("audio");
 	audio.volume=0.25;
+	
+	var fbIcon=document.getElementById("fbIcon");
+	fbIcon.addEventListener("mouseover",function(){
+		this.style.opacity=0.2;
+	});
+	fbIcon.addEventListener("mouseout",function(){
+		this.style.opacity=1;
+	});
+	
+	var igIcon=document.getElementById("igIcon");
+	igIcon.addEventListener("mouseover",function(){
+		this.style.opacity=0.2;
+	});
+	igIcon.addEventListener("mouseout",function(){
+		this.style.opacity=1;
+	});
 };
 
-function indexHomepage(){
-	var thing=document.getElementById("indexHomepage");
-	thing.classList.toggle("indexSelect")
-}
 function indexIN(inWhat){
 	var thing=document.getElementById("index"+inWhat);
 	thing.style.backgroundColor="#0066FF";
 }
-function indexOUT(inWhat){
-	var thing=document.getElementById("index"+inWhat);
+function indexOUT(outWhat){
+	var thing=document.getElementById("index"+outWhat);
 	thing.style.backgroundColor="#5599FF";
 }
 function clickIndex(clickWhat){

@@ -46,6 +46,7 @@
 			text-align:center;
 			font-weight:bold;
 			line-height:30px;
+			transition:background-color 1s;
 		}
 		.introduceStyle{
 			width:300px; 
@@ -60,6 +61,13 @@
 			font-weight:bold; 
 			font-size:15px; 
 			padding:25px;
+		}
+		.iconStyle{
+			width:50px; 
+			height:50px; 
+			border-style:none; 
+			margin-left:30px;
+			transition:opacity 1s;
 		}
 		.iframeStyle{
 			width:1600px; 
@@ -92,7 +100,7 @@
 		</div>
 		<hr class="hrStyle"/>
 		
-		<div style="width:1903px; height:2500px">
+		<div style="width:1903px; height:auto">
 			<!-- 左邊作者欄 -->
 			<div class="introduceStyle"> <!--background-color:#0044BB;-->
 				<div class="introduceText">Editer Information:</div>
@@ -102,10 +110,10 @@
 				<div class="introduceText">Studying:HTML CSS JavaScript JQerry Java C# SQL</div>
 				<div class="introduceText">Follow Me:</div>
 				<a href="https://www.facebook.com/profile.php?id=100004000341204">
-					<img src="element/Facebook Icon.jpg" style="width:50px; height:50px; border-style:none; margin-left:30px;"/>
+					<img id="fbIcon" src="element/Facebook Icon.jpg" class="iconStyle"/>
 				</a>
 				<a href="https://www.instagram.com/ap93505/?hl=zh-tw">
-					<img src="element/Instrgram Icon.jpg" style="width:50px; height:50px; border-style:none; margin-left:10px;"/>
+					<img id="igIcon" src="element/Instrgram Icon.jpg" class="iconStyle"/>
 				</a>
 				<audio id="audio" src="element/audio.mp3" style="margin-top:30px;" controls autoplay>Your browser does not support the audio element.</audio>
 			</div>
