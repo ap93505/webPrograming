@@ -25,3 +25,13 @@ function hide(){
 	}
 	*/
 }
+/*function boxAnimation(){
+	var box=document.getElementById("box");
+	var style=window.getComputedStyle(box);
+	var size=style.getPropertyValue("width");
+	size=parseInt(size);
+	window.setInterval(function(){
+		size+=3;
+		box.style.width=size+"px";
+	},10);
+}*/

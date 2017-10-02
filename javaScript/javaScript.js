@@ -17,6 +17,29 @@ window.onload=function(){
 	igIcon.addEventListener("mouseout",function(){
 		this.style.opacity=1;
 	});
+	
+	/*var box=document.getElementById("titleAnimation");
+	var style=window.getComputedStyle(box);
+	var height=style.getPropertyValue("height");
+	var width=style.getPropertyValue("width");
+	height=parseInt(height);
+	width=parseInt(width);
+	var interID1=window.setInterval(function(){
+		if(height>=300){
+			window.clearInterval(interID1);
+			return;
+		}
+		height+=5;
+		box.style.height=height+"px";
+	},5);
+	var interID2=window.setInterval(function(){
+		if(width>=1903){
+			window.clearInterval(interID2);
+			return;
+		}
+		width+=20;
+		box.style.width=width+"px";
+	},5);*/
 };
 
 function indexIN(inWhat){
