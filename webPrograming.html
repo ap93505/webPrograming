@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
 		<title>Animation Forever</title>
 		
@@ -91,7 +92,7 @@
 			transition:opacity 1s;
 		}
 		.iframeStyle{
-			width:1600px; 
+			width:1603px; 
 			height:2500px;
 			float:left; 
 			scrolling:no; 
@@ -105,6 +106,12 @@
 			background-color:#666666;
 			text-align:right;
 			font-weight:bold;
+		}
+		
+		@media screen and (max-width:600px){
+			.indexSet{
+				visibility:hidden;
+			}
 		}
 		</style>
 	</head>
@@ -139,7 +146,7 @@
 		
 		<main style="width:1903px; height:2500px">
 			<!-- 左邊作者欄 -->
-			<div class="introduceStyle"> <!--background-color:#0044BB;-->
+			<div class="introduceStyle">
 				<div class="introduceText">Editer Information:</div>
 				<img src="element/大頭照3.jpg" style="width:200px; height:200px; padding-left:25px;"/>
 				<div class="introduceText">Graduated from National Chung Cheng University</div>
