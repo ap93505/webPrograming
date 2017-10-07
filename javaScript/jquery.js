@@ -6,8 +6,6 @@ jQuery(document).ready(function(){
 $("#testField2").text("bbbbb");
 });
 */
-/*
 $( function() {
     $( "#accordion" ).accordion();
   } );
-*/

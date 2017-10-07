@@ -40,6 +40,13 @@ window.onload=function(){
 		width+=20;
 		box.style.width=width+"px";
 	},5);*/
+	
+	var box=document.getElementById("titleAnimation");
+	box.style.height="297px";
+	window.setTimeout(AnimationA, 500);
+	window.setTimeout(AnimationB, 1000);
+	window.setTimeout(AnimationC, 2000);
+	
 };
 
 function indexIN(inWhat){
@@ -65,6 +72,21 @@ function clickIndex(clickWhat){
 		thing.src="555.html";
 	}
 	iframe.scrolling="no"; 
+}
+function AnimationA(){
+	var box=document.getElementById("titleAnimation");
+	box.style.marginTop="257px";
+	box.style.height="40px";
+}
+function AnimationB(){
+	var box=document.getElementById("titleAnimation");
+	box.style.width="1903px";
+}
+function AnimationC(){
+	var box1=document.getElementById("titleAnimation");
+	box1.style.visibility="hidden";
+	var box2=document.getElementById("indexSet");
+	box2.style.opacity="1";
 }
 /*
 function getData(){

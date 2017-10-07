@@ -38,7 +38,7 @@
 			background-color:#5599FF;
 			border-radius:15px;
 			box-shadow:3px 3px 5px black;
-			visibility:hidden;
+			transition:height 0.5s, width 1s, margin 0.5s, visibility 1s;
 		}
 		.indexFixed{
 			width:150px;
@@ -56,6 +56,8 @@
 			background-color:#5599FF;
 			border-radius:15px;
 			box-shadow:3px 3px 5px black;
+			opacity:0;
+			transition:opacity 1s;
 		}
 		.indexItem{
 			width:100px;
@@ -130,17 +132,17 @@
 			<li style="padding:5px;" onclick="clickIndex(2);">Introduction</li>
 			<li style="padding:5px;" onclick="clickIndex(3);">Gallery</li>
 			<li style="padding:5px;" onclick="clickIndex(4);">Contact Me</li>
-			<li style="padding:5px;" onclick="clickIndex(5);">555</li>
+			<li style="padding:5px;" onclick="clickIndex(5);">UItesting</li>
 		</ul>
 		</div>
 		<hr class="hrStyle"/>
 		<!-- 標題列 -->
-		<div class="indexSet">
+		<div id="indexSet" class="indexSet">
 			<div id="index1" onclick="clickIndex(1);" onmousemove="indexIN(1);" onmouseout="indexOUT(1);" class="indexItem" style="margin-left:20px;">Homepage</div>
 			<div id="index2" onclick="clickIndex(2);" onmousemove="indexIN(2);" onmouseout="indexOUT(2);" class="indexItem">Introduction</div>
 			<div id="index3" onclick="clickIndex(3);" onmousemove="indexIN(3);" onmouseout="indexOUT(3);" class="indexItem">Gallery</div>
 			<div id="index4" onclick="clickIndex(4);" onmousemove="indexIN(4);" onmouseout="indexOUT(4);" class="indexItem">Contact Me</div>
-			<div id="index5" onclick="clickIndex(5);" onmousemove="indexIN(5);" onmouseout="indexOUT(5);" class="indexItem">555</div>
+			<div id="index5" onclick="clickIndex(5);" onmousemove="indexIN(5);" onmouseout="indexOUT(5);" class="indexItem">UItesting</div>
 		</div>
 		<hr class="hrStyle"/>
 		
