@@ -32,9 +32,9 @@
 		.indexAnimation{
 			width:40px;
 			height:40px;
-			position:fixed;
 			top:0px;
 			right:0px;
+			position:absolute;
 			background-color:#5599FF;
 			border-radius:15px;
 			box-shadow:3px 3px 5px black;
@@ -122,18 +122,20 @@
 
 	<body style="margin:0px; background-color:#eeeeee;">
 		<!-- 這是註解 -->
-		<div class="titleImg">
-			<div class="titleText">YoChen's Animation Center</div>
-		</div>
-		<div id="titleAnimation" class="indexAnimation"></div>
-		<div id="indexFixed" class="indexFixed">
-			<ul>
-			<li style="padding:5px;" onclick="clickIndex(1);">Homepage</li>
-			<li style="padding:5px;" onclick="clickIndex(2);">Introduction</li>
-			<li style="padding:5px;" onclick="clickIndex(3);">Gallery</li>
-			<li style="padding:5px;" onclick="clickIndex(4);">Contact Me</li>
-			<li style="padding:5px;" onclick="clickIndex(5);">UItesting</li>
-		</ul>
+		<div>
+			<div id="titleAnimation" class="indexAnimation"></div>
+			<div class="titleImg">
+				<div class="titleText">YoChen's Animation Center</div>
+			</div>
+			<div id="indexFixed" class="indexFixed">
+				<ul>
+				<li style="padding:5px;" onclick="clickIndex(1);">Homepage</li>
+				<li style="padding:5px;" onclick="clickIndex(2);">Introduction</li>
+				<li style="padding:5px;" onclick="clickIndex(3);">Gallery</li>
+				<li style="padding:5px;" onclick="clickIndex(4);">Contact Me</li>
+				<li style="padding:5px;" onclick="clickIndex(5);">UItesting</li>
+			</ul>
+			</div>
 		</div>
 		<hr class="hrStyle"/>
 		<!-- 標題列 -->
@@ -156,10 +158,10 @@
 				<div class="introduceText">Studying:HTML CSS JavaScript JQerry Java C# SQL</div>
 				<div class="introduceText">Follow Me:</div>
 				<a href="https://www.facebook.com/profile.php?id=100004000341204">
-					<img id="fbIcon" src="element/Facebook Icon.jpg" class="iconStyle"/>
+					<img id="fbIcon" src="element/FacebookIcon.jpg" class="iconStyle"/>
 				</a>
 				<a href="https://www.instagram.com/ap93505/?hl=zh-tw">
-					<img id="igIcon" src="element/Instrgram Icon.jpg" class="iconStyle"/>
+					<img id="igIcon" src="element/InstrgramIcon.jpg" class="iconStyle"/>
 				</a>
 				<audio id="audio" src="element/audio.mp3" style="margin-top:30px;" controls autoplay>Your browser does not support the audio element.</audio>
 			</div>
