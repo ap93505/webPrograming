@@ -60,7 +60,7 @@ function clickIndex(clickWhat){
 	}else if(clickWhat==3){
 		thing.src="Gallery.html";
 	}else if(clickWhat==4){
-		thing.src="Contact Me.html";
+		thing.src="ContactMe.html";
 	}else if(clickWhat==5){
 		thing.src="555.html";
 	}
