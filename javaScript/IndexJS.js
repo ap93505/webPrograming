@@ -42,10 +42,17 @@ window.onload=function(){
 	},5);*/
 	
 	var box=document.getElementById("titleAnimation");
-	box.style.height="297px";
+	box.style.top="257px";
+	box.style.height="1243px";
 	window.setTimeout(AnimationA, 500);
 	window.setTimeout(AnimationB, 1000);
 	window.setTimeout(AnimationC, 2000);
+	window.setTimeout(AnimationIndexA, 2200);
+	window.setTimeout(AnimationIndexB, 2400);
+	window.setTimeout(AnimationIndexC, 2600);
+	window.setTimeout(AnimationIndexD, 2800);
+	window.setTimeout(AnimationIndexE, 3000);
+	
 	
 };
 
@@ -75,7 +82,6 @@ function clickIndex(clickWhat){
 }
 function AnimationA(){
 	var box=document.getElementById("titleAnimation");
-	box.style.marginTop="257px";
 	box.style.height="40px";
 }
 function AnimationB(){
@@ -83,10 +89,30 @@ function AnimationB(){
 	box.style.width="1903px";
 }
 function AnimationC(){
-	var box1=document.getElementById("titleAnimation");
-	box1.style.visibility="hidden";
-	var box2=document.getElementById("indexSet");
-	box2.style.opacity="1";
+	var box=document.getElementById("titleAnimation");
+	box.style.visibility="hidden";
+	var index=document.getElementById("indexSet");
+	index.style.opacity="1";
+}
+function AnimationIndexA(){
+	var thing=document.getElementById("index1");
+	thing.style.opacity="1";
+}
+function AnimationIndexB(){
+	var thing=document.getElementById("index2");
+	thing.style.opacity="1";
+}
+function AnimationIndexC(){
+	var thing=document.getElementById("index3");
+	thing.style.opacity="1";
+}
+function AnimationIndexD(){
+	var thing=document.getElementById("index4");
+	thing.style.opacity="1";
+}
+function AnimationIndexE(){
+	var thing=document.getElementById("index5");
+	thing.style.opacity="1";
 }
 /*
 function getData(){
