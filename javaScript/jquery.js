@@ -9,3 +9,6 @@ $("#testField2").text("bbbbb");
 $( function() {
     $( "#accordion" ).accordion();
   } );
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
