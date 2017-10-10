@@ -1,6 +1,6 @@
 window.onload=function(){
-	var audio=document.getElementById("audio");
-	audio.volume=0.25;
+	/*var audio=document.getElementById("audio");
+	audio.volume=0.25;*/
 	
 	var fbIcon=document.getElementById("fbIcon");
 	fbIcon.addEventListener("mouseover",function(){
