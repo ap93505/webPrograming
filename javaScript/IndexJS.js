@@ -66,7 +66,6 @@ function indexOUT(outWhat){
 }
 function clickIndex(clickWhat){
 	var thing=document.getElementById("mainDocument");
-	var iframe=document.getElementById("mainDocument");
 	if(clickWhat==1){
 		thing.src="Homepage.html";
 	}else if(clickWhat==2){
@@ -78,7 +77,7 @@ function clickIndex(clickWhat){
 	}else if(clickWhat==5){
 		thing.src="555.html";
 	}
-	iframe.scrolling="no"; 
+	thing.scrolling="no"; 
 }
 function AnimationA(){
 	var box=document.getElementById("titleAnimation");
