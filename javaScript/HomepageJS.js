@@ -1,37 +1,122 @@
-function change(choice){
-	//window.document.body.innerHTML="安安";
-	var voteTic=document.getElementById("vote"+choice);
-	if(choice=="1"){
-		voteTic.innerHTML="11";
-		voteTic.style.color="red";
-		//javaScript不能使用"-"(dash)，通常去"-"改成字首大寫 ex.font-weight>>fontWeight
-		voteTic.style.fontWeight="bold";
-	}else if(choice=="2"){
-		voteTic.innerHTML="12";
-		voteTic.style.color="red";
-		voteTic.style.fontWeight="bold";
-	}else{
-		alert("投票無效");
+var video;
+var testBoxAttribute={
+	"x":0,
+	"y":0,
+	"size":1,
+	"spanDeg":0,
+	"skewXDeg":0,
+	"skewYDeg":0
+};
+
+window.onload=function(){
+	
+	var btn=document.getElementById("canvasButton");
+	var hint=document.getElementById("hintText");
+	
+	var canvasHandler=function(){
+		alert("請透過上下左右控制畫板");
+
+		hint.style.visibility="visible";
+		var cvs=document.getElementById("canvasTable");
+		var ctx=cvs.getContext("2d");
+		
+		//確保線條不會被縮放
+		var tWid = window.devicePixelRatio;
+		cvs.width = parseInt(cvs.width) * tWid;
+		cvs.height = parseInt(cvs.height) * tWid;
+		
+		var ctx=cvs.getContext("2d");
+		ctx.fillStyle="red";//Fill填滿
+		ctx.strokeStyle="blue";//Stroke描邊	
+		
+		var clientDraw=new Object();
+		clientDraw.x=400;
+		clientDraw.y=400;
+		
+		ctx.beginPath();
+		ctx.moveTo(clientDraw.x,clientDraw.y);
+		
+		function draw(){
+			ctx.lineTo(clientDraw.x,clientDraw.y);
+			ctx.closePath();
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.moveTo(clientDraw.x,clientDraw.y);
+		};
+		
+		document.addEventListener("keydown",function(e){
+			event.preventDefault();	//取消上下鍵卷軸移動功能
+			if(e.keyCode==37){
+				clientDraw.x-=10;			
+				draw();
+			}else if(e.keyCode==38){
+				clientDraw.y-=10;
+				draw();
+			}
+			else if(e.keyCode==39){
+				clientDraw.x+=10;
+				draw();
+			}
+			else if(e.keyCode==40){
+				clientDraw.y+=10;
+				draw();
+			}else if(e.keyCode==27){
+				return;
+			}
+		});
+	};
+	
+	btn.addEventListener("click",canvasHandler);
+	
+	var cvs=document.getElementById("canvasTable");
+	var ctx=cvs.getContext("2d");
+	
+	var tWid = window.devicePixelRatio;
+	cvs.width = parseInt(cvs.width) * tWid;
+	cvs.height = parseInt(cvs.height) * tWid;
+	
+	//ctx.globalAlpha=0.5;
+	
+	ctx.fillStyle="#9900FF";
+	ctx.fillRect(10,10,750,750);
+	ctx.fillStyle="#0000FF";
+	ctx.fillRect(20,20,650,650);
+	ctx.fillStyle="#00BBFF";
+	ctx.fillRect(30,30,550,550);
+	ctx.fillStyle="#00FF00";
+	ctx.fillRect(40,40,450,450);
+	ctx.fillStyle="#FFFF00";
+	ctx.fillRect(50,50,350,350);
+	ctx.fillStyle="#FF8800";
+	ctx.fillRect(60,60,250,250);
+	ctx.fillStyle="#FF0000";
+	ctx.fillRect(70,70,150,150);
+	
+	ctx.strokeStyle="#000000";
+	ctx.strokeRect(80,80,100,100);
+	//ctx.scale(0.5,0.5);
+	ctx.strokeRect(90,90,50,50);
+};
+
+function transform(clickWhat){
+	var thing=document.getElementById("transformBox");
+	if(clickWhat==1){
+		testBoxAttribute.x+=30;
+		testBoxAttribute.y+=30;
+	}else if(clickWhat==2){
+		testBoxAttribute.size+=0.25;
+	}else if(clickWhat==3){
+		testBoxAttribute.spanDeg+=15;
+	}else if(clickWhat==4){
+		testBoxAttribute.skewXDeg+=10;
+		testBoxAttribute.skewYDeg+=10;
+	}else if(clickWhat==5){
+		testBoxAttribute.x=0;
+		testBoxAttribute.y=0;
+		testBoxAttribute.size=1;
+		testBoxAttribute.spanDeg=0;
+		testBoxAttribute.skewXDeg=0;
+		testBoxAttribute.skewYDeg=0;
 	}
-}
-function hide(){
-	var thing=document.getElementById("table1");
-	thing.classList.toggle("hideTable"); //toggle>>有這個屬性的話就刪掉，沒有的話就加上
-	/*
-	if(thing.style.display=="none"){			
-		thing.style.display="block";
-	}else{
-		thing.style.display="none";
-	}
-	*/
-}
-/*function boxAnimation(){
-	var box=document.getElementById("box");
-	var style=window.getComputedStyle(box);
-	var size=style.getPropertyValue("width");
-	size=parseInt(size);
-	window.setInterval(function(){
-		size+=3;
-		box.style.width=size+"px";
-	},10);
-}*/
+	thing.style.transform="translate("+testBoxAttribute.x+"px,"+testBoxAttribute.y+"px) scale("+testBoxAttribute.size+","+testBoxAttribute.size+") rotate("+testBoxAttribute.spanDeg+"deg) skew("+testBoxAttribute.skewXDeg+"deg,0deg)";
+}	

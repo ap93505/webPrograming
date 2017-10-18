@@ -48,6 +48,7 @@
 			right:0px;
 			background-color:#FFB7DD;
 			border-radius:15px;
+			cursor:pointer;
 			box-shadow:3px 3px 5px black;
 		}
 		.indexSet{
@@ -70,6 +71,7 @@
 			text-align:center;
 			font-weight:bold;
 			line-height:30px;
+			cursor:pointer;
 			opacity:0;
 			transition:background-color 1s, opacity 1s;
 		}
@@ -113,7 +115,7 @@
 		
 		@media screen and (max-width:600px){
 			.indexSet{
-				visibility:hidden;
+			
 			}
 		}
 		</style>
@@ -141,11 +143,11 @@
 		<hr class="hrStyle"/>
 		<!-- 標題列 -->
 		<div id="indexSet" class="indexSet">
-			<div id="index1" onclick="clickIndex(1);" onmousemove="indexIN(1);" onmouseout="indexOUT(1);" class="indexItem" style="margin-left:20px;">Homepage</div>
-			<div id="index2" onclick="clickIndex(2);" onmousemove="indexIN(2);" onmouseout="indexOUT(2);" class="indexItem">Introduction</div>
-			<div id="index3" onclick="clickIndex(3);" onmousemove="indexIN(3);" onmouseout="indexOUT(3);" class="indexItem">Gallery</div>
-			<div id="index4" onclick="clickIndex(4);" onmousemove="indexIN(4);" onmouseout="indexOUT(4);" class="indexItem">Contact Me</div>
-			<div id="index5" onclick="clickIndex(5);" onmousemove="indexIN(5);" onmouseout="indexOUT(5);" class="indexItem">UItesting</div>
+			<div id="index1" onclick="clickIndex(1);" class="indexItem" style="margin-left:20px;">Homepage</div>
+			<div id="index2" onclick="clickIndex(2);" class="indexItem">Introduction</div>
+			<div id="index3" onclick="clickIndex(3);" class="indexItem">Gallery</div>
+			<div id="index4" onclick="clickIndex(4);" class="indexItem">Contact Me</div>
+			<div id="index5" onclick="clickIndex(5);" class="indexItem">UItesting</div>
 		</div>
 		<hr class="hrStyle"/>
 		

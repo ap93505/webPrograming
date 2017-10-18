@@ -2,21 +2,44 @@ window.onload=function(){
 	/*var audio=document.getElementById("audio");
 	audio.volume=0.25;*/
 	
-	var fbIcon=document.getElementById("fbIcon");
-	fbIcon.addEventListener("mouseover",function(){
-		this.style.opacity=0.2;
-	});
-	fbIcon.addEventListener("mouseout",function(){
-		this.style.opacity=1;
-	});
+	var index1=document.getElementById("index1");
+	var index2=document.getElementById("index2");
+	var index3=document.getElementById("index3");
+	var index4=document.getElementById("index4");
+	var index5=document.getElementById("index5");
 	
+	var fbIcon=document.getElementById("fbIcon");
 	var igIcon=document.getElementById("igIcon");
-	igIcon.addEventListener("mouseover",function(){
+	
+	var indexOver=function(){
+		this.style.backgroundColor="#0066FF";
+	};
+	var indexOut=function(){
+		this.style.backgroundColor="#5599FF";
+	};
+	
+	var iconOver=function(){
 		this.style.opacity=0.2;
-	});
-	igIcon.addEventListener("mouseout",function(){
+	};
+	var iconOut=function(){
 		this.style.opacity=1;
-	});
+	};
+	
+	index1.addEventListener("mouseover",indexOver);
+	index1.addEventListener("mouseout",indexOut);
+	index2.addEventListener("mouseover",indexOver);
+	index2.addEventListener("mouseout",indexOut);
+	index3.addEventListener("mouseover",indexOver);
+	index3.addEventListener("mouseout",indexOut);
+	index4.addEventListener("mouseover",indexOver);
+	index4.addEventListener("mouseout",indexOut);
+	index5.addEventListener("mouseover",indexOver);
+	index5.addEventListener("mouseout",indexOut);
+	
+	fbIcon.addEventListener("mouseover",iconOver);
+	fbIcon.addEventListener("mouseout",iconOut);
+	igIcon.addEventListener("mouseover",iconOver);
+	igIcon.addEventListener("mouseout",iconOut);
 	
 	/*var box=document.getElementById("titleAnimation");
 	var style=window.getComputedStyle(box);
@@ -53,17 +76,8 @@ window.onload=function(){
 	window.setTimeout(AnimationIndexD, 2800);
 	window.setTimeout(AnimationIndexE, 3000);
 	
-	
 };
 
-function indexIN(inWhat){
-	var thing=document.getElementById("index"+inWhat);
-	thing.style.backgroundColor="#0066FF";
-}
-function indexOUT(outWhat){
-	var thing=document.getElementById("index"+outWhat);
-	thing.style.backgroundColor="#5599FF";
-}
 function clickIndex(clickWhat){
 	var thing=document.getElementById("mainDocument");
 	if(clickWhat==1){
