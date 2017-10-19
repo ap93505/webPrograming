@@ -13,19 +13,40 @@ window.onload=function(){
 	var btn=document.getElementById("canvasButton");
 	var hint=document.getElementById("hintText");
 	
+	var cvs=document.getElementById("canvasTable");
+	var ctx=cvs.getContext("2d");
+	
+	//確保線條不會被縮放
+	//tWid = window.devicePixelRatio;
+	
+	ctx.fillStyle="#9900FF";
+	ctx.fillRect(10,10,750,750);
+	ctx.fillStyle="#0000FF";
+	ctx.fillRect(20,20,650,650);
+	ctx.fillStyle="#00BBFF";
+	ctx.fillRect(30,30,550,550);
+	ctx.fillStyle="#00FF00";
+	ctx.fillRect(40,40,450,450);
+	ctx.fillStyle="#FFFF00";
+	ctx.fillRect(50,50,350,350);
+	ctx.fillStyle="#FF8800";
+	ctx.fillRect(60,60,250,250);
+	ctx.fillStyle="#FF0000";
+	ctx.fillRect(70,70,150,150);
+	
+	ctx.strokeStyle="#000000";
+	ctx.strokeRect(80,80,100,100);
+	//ctx.scale(0.5,0.5);
+	ctx.strokeRect(90,90,50,50);
+	
 	var canvasHandler=function(){
 		alert("請透過上下左右控制畫板");
-
 		hint.style.visibility="visible";
-		var cvs=document.getElementById("canvasTable");
-		var ctx=cvs.getContext("2d");
 		
-		//確保線條不會被縮放
-		var tWid = window.devicePixelRatio;
-		cvs.width = parseInt(cvs.width) * tWid;
-		cvs.height = parseInt(cvs.height) * tWid;
+		//重新設定畫板
+		cvs.width = parseInt(cvs.width);
+		cvs.height = parseInt(cvs.height);
 		
-		var ctx=cvs.getContext("2d");
 		ctx.fillStyle="red";//Fill填滿
 		ctx.strokeStyle="blue";//Stroke描邊	
 		
@@ -61,41 +82,13 @@ window.onload=function(){
 				clientDraw.y+=10;
 				draw();
 			}else if(e.keyCode==27){
+				//離開功能
 				return;
 			}
 		});
 	};
 	
 	btn.addEventListener("click",canvasHandler);
-	
-	var cvs=document.getElementById("canvasTable");
-	var ctx=cvs.getContext("2d");
-	
-	var tWid = window.devicePixelRatio;
-	cvs.width = parseInt(cvs.width) * tWid;
-	cvs.height = parseInt(cvs.height) * tWid;
-	
-	//ctx.globalAlpha=0.5;
-	
-	ctx.fillStyle="#9900FF";
-	ctx.fillRect(10,10,750,750);
-	ctx.fillStyle="#0000FF";
-	ctx.fillRect(20,20,650,650);
-	ctx.fillStyle="#00BBFF";
-	ctx.fillRect(30,30,550,550);
-	ctx.fillStyle="#00FF00";
-	ctx.fillRect(40,40,450,450);
-	ctx.fillStyle="#FFFF00";
-	ctx.fillRect(50,50,350,350);
-	ctx.fillStyle="#FF8800";
-	ctx.fillRect(60,60,250,250);
-	ctx.fillStyle="#FF0000";
-	ctx.fillRect(70,70,150,150);
-	
-	ctx.strokeStyle="#000000";
-	ctx.strokeRect(80,80,100,100);
-	//ctx.scale(0.5,0.5);
-	ctx.strokeRect(90,90,50,50);
 };
 
 function transform(clickWhat){
