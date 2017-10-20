@@ -1,12 +1,12 @@
 var video;
-var testBoxAttribute={
+/*var testBoxAttribute={
 	"x":0,
 	"y":0,
 	"size":1,
 	"spanDeg":0,
 	"skewXDeg":0,
 	"skewYDeg":0
-};
+};*/
 
 window.onload=function(){
 	
@@ -94,6 +94,22 @@ window.onload=function(){
 function transform(clickWhat){
 	var thing=document.getElementById("transformBox");
 	if(clickWhat==1){
+		thing.style.transform+="translate(30px,30px)";
+	}else if(clickWhat==2){
+		thing.style.transform+="scale(1.25,1.25)";
+	}else if(clickWhat==3){
+		thing.style.transform+="rotate(15deg)";
+	}else if(clickWhat==4){
+		thing.style.transform+="skew(15deg,15deg)";
+	}else if(clickWhat==5){
+		thing.style.transform="";
+	}
+}
+
+
+/*function transform(clickWhat){
+	var thing=document.getElementById("transformBox");
+	if(clickWhat==1){
 		testBoxAttribute.x+=30;
 		testBoxAttribute.y+=30;
 	}else if(clickWhat==2){
@@ -101,8 +117,8 @@ function transform(clickWhat){
 	}else if(clickWhat==3){
 		testBoxAttribute.spanDeg+=15;
 	}else if(clickWhat==4){
-		testBoxAttribute.skewXDeg+=10;
-		testBoxAttribute.skewYDeg+=10;
+		testBoxAttribute.skewXDeg+=15;
+		testBoxAttribute.skewYDeg+=15;
 	}else if(clickWhat==5){
 		testBoxAttribute.x=0;
 		testBoxAttribute.y=0;
@@ -111,5 +127,5 @@ function transform(clickWhat){
 		testBoxAttribute.skewXDeg=0;
 		testBoxAttribute.skewYDeg=0;
 	}
-	thing.style.transform="translate("+testBoxAttribute.x+"px,"+testBoxAttribute.y+"px) scale("+testBoxAttribute.size+","+testBoxAttribute.size+") rotate("+testBoxAttribute.spanDeg+"deg) skew("+testBoxAttribute.skewXDeg+"deg,0deg)";
-}	
+	thing.style.transform="translate("+testBoxAttribute.x+"px,"+testBoxAttribute.y+"px) scale("+testBoxAttribute.size+","+testBoxAttribute.size+") rotate("+testBoxAttribute.spanDeg+"deg) skew("+testBoxAttribute.skewXDeg+"deg,"+testBoxAttribute.skewYDeg+"deg)";
+}*/

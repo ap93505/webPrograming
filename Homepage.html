@@ -36,6 +36,7 @@
 			background-color:#5599FF;
 			margin-left:150px;
 			margin-top:100px;
+			transition:transform 0.2s;
 		}
 		.canvasStyle{
 			border:2px solid black;
@@ -85,10 +86,11 @@
 	</head>
 	
 	<body style="margin:0px; background-color:#eeeeee;">
-		<!-- 右邊資料區 -->
 		<div>
 			<h1 class="h1Style">CSS網頁進階前端工程實作測試</h1>
-			
+		</div>
+		
+		<div>
 			<div class="titleStyle" style="margin-top:20px;">線性轉換Transform</div>	
 			<button class="buttonStyle" onclick="transform(1);">位移translate</button>
 			<button class="buttonStyle" onclick="transform(2);">縮放scale</button>
@@ -102,18 +104,21 @@
 			<div class="titleStyle">Canvas繪圖</div>
 			<button id="canvasButton" class="buttonStyle" onclick="transform(5);">開始繪圖</button>
 			<span id="hintText" class="hintStyle">**使用上下左右進行繪圖，或按ESC離開繪圖功能</span>
+			<div>
+				<canvas id="canvasTable" width="800px" height="800px" class="canvasStyle"></canvas>
+			</div>
 		</div>
-		
-		<canvas id="canvasTable" width="800px" height="800px" class="canvasStyle"></canvas>
-		
+
 		<!--<div class="titleStyle">video影音撥放</div>
 		<video id="video" src="element/video.mp4" width="500px" height="350px" style="margin-left:150px;" controls>
 			Your browser does not support the video element.
 		</video>-->
 		
-		<div class="titleStyle">animation動畫製作</div>
-		<div id="box2" class="box2Style"></div>
-		<div id="box2" class="box3Style"></div>
+		<div>
+			<div class="titleStyle">animation動畫製作</div>
+			<div id="box2" class="box2Style"></div>
+			<div id="box2" class="box3Style"></div>
+		</div>
 	</body>
 	
 </html>
