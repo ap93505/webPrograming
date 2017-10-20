@@ -1,6 +1,6 @@
 window.onload=function(){
-	/*var audio=document.getElementById("audio");
-	audio.volume=0.25;*/
+	var audio=document.getElementById("audio");
+	audio.volume=0.25;
 	
 	var index1=document.getElementById("index1");
 	var index2=document.getElementById("index2");
