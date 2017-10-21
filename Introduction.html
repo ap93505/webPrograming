@@ -7,103 +7,150 @@
 		<script type="text/javaScript" src="javaScript/IntroductionJS.js"></script>
 		
 		<style type="text/css">
+		.divStyle{
+			width:80%;
+			margin:0px auto;
+			clear:both;
+		}
 		.h1Style{
-			margin-left:60px;
 			margin-top:50px;
+			text-align:center;
 			color:blue;
 			font-weight:bolder;
 		}
-		.contentImg{
-			width:640px; 
-			height:360px; 
-			border-style:none; 
-			margin-left:90px;
+		.h3Style{
+			color:red;
+			margin-top:20px;
+			font-size:20px;
 		}
-		.table{
-			border:1px solid blue; 
-			width:1000px; 
-			margin-left:auto; 
-			margin-right:auto;
-			text-align:center;
-		}
-		.hideTable{
-			display:none;
-		}
-		.liStyle{
-			padding:30px; 
-			<!--display:inline-block; 
-			vertical-align:top;-->
-		}
-		.ImgTable{
-			width:200px;
-			height:100px;
-		}
-		.imgTry{
-			background-image:url('element/Hyouka 01.jpg');
-			width:200px;
-			height:100px;
+		.divIn{
+			display:inline-block; 
+			vertical-align:top;
 		}
 		</style>
 	</head>
 	
 	<body style="margin:0px; background-color:#eeeeee;">
-		<h1 class="h1Style">My picture</h1>
-		<div>
-			<a href="http://www.google.com/" target="_blank">
-				<img src="element/all will be with you.jpg" class="contentImg"/>
-			</a>
-			<a href="http://www.google.com/" target="_parent">
-				<img src="element/不起眼3.jpg" class="contentImg"/>
-			</a>
+		<h1 class="h1Style">個人履歷表</h1>
+		<div class="divStyle">
+			<h2 style="color:#5500FF; display:inline-block;">陳冀佑(Kevin Chen)</h2>
+			<span>男性 未婚 役畢(2017年08月)</span>
+			<hr/>
+			<div>
+				<div style="float:left;">
+					<p>出生日期：1993年11月2日</p>
+					<p>身高體重：189公分78公斤</p>
+					<p>E-mail：ap93505@gmail.com</p>
+					<p>連絡電話：0928031690</p>
+					<p>聯絡方式：e-mail、手機</p>
+					<p>通訊地址：高雄市鼓山去美術東二路46號11樓</p>
+					<p>駕駛執照：普通重型機車駕照</p>
+				</div>
+				<img src="element/大頭照4.jpg" width="200px" style="position:absolute; right:10%;"/>
+			</div>
 		</div>
-		<hr/>
-	
-		<h3 class="h1Style">My favorite 連結</h3>
-		<ul>
-			<li class="liStyle"><a href="http://www.google.com/" target="_blank">Google</a></li>
-			<li class="liStyle"><a href="https://www.facebook.com/profile.php?id=100004000341204" target="_blank">Facebook</a></li>
-			<li class="liStyle"><a href="https://www.ptt.cc/bbs/index.html" target="_self">PTT</a></li>
-		</ul>
-		<hr/>
-	
-		<div class="imgTry"></div>
-	
-		<h3 class="h1Style">動畫推薦</h3>	
-		<button onclick="hide();">開啟/隱藏表單</button>
-		<table id="table1" class="table">
-			<tr>
-				<td>名稱</td>
-				<td>票數</td>
-				<td>推薦度</td>
-				<td>圖片</td>
-			</tr>
-			<tr>
-				<td>
-					<u>我的妹妹 底線</u>
-					<button onclick="change(1);">我要投票</button>
-				</td>
-				<td id="vote1">10</td>
-				<td>8</td>
-				<td>
-					<a href="https://www.google.com.tw/search?q=%E6%88%91%E7%9A%84%E5%A6%B9%E5%A6%B9%E5%93%AA%E6%9C%89%E9%80%99%E9%BA%BC%E5%8F%AF%E6%84%9B&oq=%E6%88%91%E7%9A%84%E5%A6%B9%E5%A6%B9%E5%93%AA%E6%9C%89%E9%80%99%E9%BA%BC%E5%8F%AF%E6%84%9B&gs_l=psy-ab.3...34033.44632.0.44964.29.29.0.0.0.0.84.1638.29.29.0....0...1.1j4.64.psy-ab..0.5.321...0.0.CRlHzD_7CNQ">
-					<img class="ImgTable" src="element/あやせ.jpg"/>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<b>劣等生 粗體</b>
-					<button onclick="change(2);">我要投票</button>
-				</td>
-				<td id="vote2">11</td>
-				<td>7</td>
-				<td>
-					<a href="https://www.google.com.tw/search?q=%E9%AD%94%E6%B3%95%E7%A7%91%E9%AB%98%E6%A0%A1%E7%9A%84%E5%8A%A3%E7%AD%89%E7%94%9F&oq=%E9%AD%94%E6%B3%95&gs_l=psy-ab.1.0.0l4.27480.28375.0.30058.6.6.0.0.0.0.82.389.6.6.0....0...1.1j4.64.psy-ab..0.4.263...0i131k1.0.ZrM9JYPFSh8">
-					<img class="ImgTable" src="element/劣等生2.jpg"/>
-					</a>
-				</td>
-			</tr>
-		</table>	
+		
+		<div class="divStyle">
+			<h3 class="h3Style">學歷</h3>
+			<hr/>
+			<h3 style="margin-bottom:10px;">國立中正大學(台灣)</h3>
+			<div class="divIn" style="width:40%;">
+				<p>科系名稱：資訊管理學系</p>
+				<p>學歷：大學</p>
+			</div>
+			<div class="divIn">
+				<p>科系類別：資訊管理相關</p>
+				<p>就學期間：2012/09~2016/06(畢業)</p>
+			</div>
+		</div>
+		
+		<div class="divStyle">
+			<h3 class="h3Style">技能專長</h3>
+			<hr/>
+			<div>
+				<div class="divIn" style="width:80px;">
+					<p>語文能力：</p>
+				</div>
+				<div class="divIn">
+					<p>外文 - 英文　聽(中等)　說(中等)　讀(中等)　寫(中等)</p>
+					<p>外文 - 日文　聽(中等)　說(略懂)　讀(中等)　寫(中等)</p>
+					<p>方言 - 台語(精通)</p>
+				</div>
+			</div>
+			<div>
+				<div class="divIn" style="width:80px;">
+					<p>擅長工具：</p>
+				</div>
+				<div class="divIn">
+					<p>Java、C#、SQL、HTML、JavaScript、jQuery</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divStyle">
+			<h3 class="h3Style">自傳</h3>
+			<hr/>
+			<div>
+				<div class="divIn" style="width:80px;">
+					<p>中文自傳：</p>
+				</div>
+				<div class="divIn" style="width:90%">
+					<div>
+						<p>您好~
+						<br>我叫陳冀佑，來自高雄，從小在鄉下長大，對任何事物都充滿好奇心，鄉下的環境也造就了我外向的個性，喜歡與人交流，能夠迅速融入人群。國中的時候搬來都市，體會不同於以往的生活，都能夠快速適應。在團體中常扮演分析、整合意見的角色。</p>
+						<h3>大學時期</h3>
+						<p>畢業於國立中正大學資訊管理學系  
+						<br>在學期間曾學習過C#、JAVA、SQL、Android
+						<br>並且曾自學過HTML、CSS、JavaScript  
+						<br>喜歡嘗試各領域研究，包含各國歷史、多媒體製作、自然觀察。</p>
+						<h3>社團：高雄校友會</h3>
+						<p>參與過返鄉服務、宿營、迎新等活動，擔任隊輔、及活動組員，能夠迅速融入團隊，在團隊溝通及活動規劃上有豐富的經驗。  
+						<h3>系學會：</h3>
+						<p>擔任活動長，曾擔任系卡拉OK活動總召，負責接洽廠商、擬定活動流程、制定活動進度表、驗收表演項目。</p>
+						<h3>專題：</h3>
+						<p>專題名稱為"點餐預約系統整合平台"
+						<br>客戶端可以透過行動裝置執行預約、報到、點餐、進度查詢、付費等功能  
+						<br>管理端則可以管理、查詢顧客預約資訊、點餐內容及出餐進度  
+						<br>開發工具為Visual Studio 2012/Eclipse、行動裝置作業系統為 Android4.3  
+						<br>資料庫使用SQL server 2012。個人負責的部分包括行動裝置APP製作、資料庫建置及客戶端功能製作。</p>
+						<h3>服役時期</h3>
+						<p>服役於左營海軍陸戰隊，在服役的一年期間內，學會如何與主管溝通，提出可能遇到的問題即適用的解決方法，對於上級長官交辦之任務都能順利找到解決的方法、迅速分配工作並完成。</p>
+						<h3>語言檢定</h3>
+						<p>英文:TOEIC　650分　(2012)</p> 
+						<p>日文:JLPT　N2　(2017)</p>
+					</div>
+				</div>
+				<div class="divIn" style="width:80px;">
+				<p>英文自傳：</p>
+				</div>
+				<div class="divIn" style="width:90%">
+					<div>
+						<p>Hallo, 
+						<br>my name is Kevin Chen. I come from Kaohsiung. I grew up in the countryside of Kaohsiung. What make me become a boy that curious about everything. The environment also created my outgoing personality. I like to communicate with other people. When I was in junior high school, we move to Kaohsiung city. Different from previous life, I can also quickly adapt with it. In the group, I often play the role of analysis and integration.</p>
+						<h3>College period:</h3>
+						<p>I was graduated from National Chung Cheng University. Studying on Department of Information Management. 
+						<br>During my college, I had studied about C#, JAVA, SQL, Android. 
+						<br>And I also had learned HTML, CSS, JavaScript by myself. 
+						<br>I would like to try in various field, including national history, multimedia production and natural observation.</p>
+						<h3>Community: Kaohsiung Alumni Community</h3>
+						<p>Participated in The volunteer of primary school, camping and other activities. As a team members, I can quickly integrate into the team, having good communication and event planning. So, that make me has a wealth of experience.
+						<h3>Community of department:</h3>
+						<p>I had served as the activity leader of karaoke activities. Responsible for contact with manufacturers, the process of the activities, the activities schedule and the acceptance of performance.</p>
+						<h3>Project:</h3>
+						<p>The title of our project is "The integration platform of restaurant ordering system"
+						<br>At the client side, it can perform reservation, check-in, ordering, progress queries, payments, etc. on their mobile devices.
+						<br>At the management side, it can inquire customer booking information, ordering information and meal progress.
+						<br>The development tool we use are Visual Studio 2012 and Eclipse, mobile device operating system is Android4.3. Database is using SQL server 2012.
+						<br>Personal responsible parts include the production of mobile device APP, database building and the function of client side.</p>
+						<h3>Military service period:</h3>
+						<p>Service in the Marine Corps, I learn about how to communicate with the supervisor. Put forward the possible problems and offer the possible solution. For the task that superiors assigned to, I can successfully find a method, Assign work and finish as fast as I can.</p>
+						<h3>Language skills:</h3>
+						<p>English: TOEIC 650 points (2012)</p>
+						<p>Japanese: JLPT N2 (2017)</p>
+					</div>
+				</div>
+			</div>
+		</div>	
 	</body>
 	
 </html>
