@@ -58,7 +58,7 @@ function clickIndex(clickWhat){
 	}else if(clickWhat==5){
 		thing.src="JQuery-ui.html";
 	}else if(clickWhat==6){
-		thing.src="Bookstrap-ui.html";
+		thing.src="Bookstrap.html";
 	}
 	thing.scrolling="no"; 
 }
@@ -80,16 +80,16 @@ function AnimationIndex(clickWhat){
 	var thing=document.getElementById("index"+clickWhat);
 	thing.style.opacity="1";
 }
-var indexOver=function(){
+function indexOver(){
 	this.style.backgroundColor="#0066FF";
 }
-var indexOut=function(){
+function indexOut(){
 	this.style.backgroundColor="#5599FF";
 }
-var iconOver=function(){
+function iconOver(){
 	this.style.opacity=0.2;
 }
-var iconOut=function(){
+function iconOut(){
 	this.style.opacity=1;
 }
 /*function getData(){
