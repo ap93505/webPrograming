@@ -7,7 +7,7 @@
 		
 		<title>Animation Forever</title>
 		
-		<script type="text/javaScript" src="javaScript/IndexJS.js"></script>
+		<script type="text/javaScript" src="javaScript/index.js"></script>
 		
 		<style type="text/css">
 		.titleImg{
@@ -19,10 +19,9 @@
 		}
 		.titleText{
 			width:250px;
-			height:30px;
 			margin-left:auto; 
-			margin-right:100px;
-			padding-top:150px;
+			margin-right:110px;
+			padding-top:180px;
 			color:white; 
 			font-size:30px;
 			font-weight:bold;
@@ -36,11 +35,10 @@
 			background-color:#5599FF;
 			border-radius:15px;
 			box-shadow:3px 3px 5px black;
-			transition:height 0.5s, width 1s, top 0.5s, visibility 1s;
+			transition:height 0.5s, width 0.5s, top 0.5s, visibility 0.5s;
 		}
 		.indexFixed{
 			width:150px;
-			height:180px;
 			position:fixed;
 			top:0px;
 			right:0px;
@@ -56,7 +54,7 @@
 			border-radius:15px;
 			box-shadow:3px 3px 5px black;
 			opacity:0;
-			transition:opacity 1s;
+			transition:opacity 0.5s;
 		}
 		.indexItem{
 			width:100px;
@@ -92,7 +90,7 @@
 			height:50px; 
 			border-style:none; 
 			margin-left:30px;
-			transition:opacity 1s;
+			transition:opacity 0.5s;
 		}
 		.iframeStyle{
 			width:1603px; 
@@ -122,7 +120,7 @@
 
 	<body style="margin:0px; background-color:#eeeeee;">
 		<div>
-			<div id="titleAnimation" class="indexAnimation"></div>
+			<div id="indexAnimation" class="indexAnimation"></div>
 			<div class="titleImg">
 				<div class="titleText">YoChen's Animation Center</div>
 			</div>
@@ -132,11 +130,12 @@
 					<li style="padding:5px;" onclick="clickIndex(2);">Introduction</li>
 					<li style="padding:5px;" onclick="clickIndex(3);">Gallery</li>
 					<li style="padding:5px;" onclick="clickIndex(4);">Contact Me</li>
-					<li style="padding:5px;" onclick="clickIndex(5);">UItesting</li>
+					<li style="padding:5px;" onclick="clickIndex(5);">JQuery-UI</li>
+					<li style="padding:5px;" onclick="clickIndex(6);">Bookstrap</li>
 				</ul>
 			</div>
 		</div>
-		<hr class="hrStyle"/>
+		<hr class="hrStyle">
 		
 		<!-- 標題列 -->
 		<div id="indexSet" class="indexSet">
@@ -144,9 +143,10 @@
 			<div id="index2" onclick="clickIndex(2);" class="indexItem">Introduction</div>
 			<div id="index3" onclick="clickIndex(3);" class="indexItem">Gallery</div>
 			<div id="index4" onclick="clickIndex(4);" class="indexItem">Contact Me</div>
-			<div id="index5" onclick="clickIndex(5);" class="indexItem">UItesting</div>
+			<div id="index5" onclick="clickIndex(5);" class="indexItem">JQuery-UI</div>
+			<div id="index6" onclick="clickIndex(6);" class="indexItem">Bookstrap</div>
 		</div>
-		<hr class="hrStyle"/>
+		<hr class="hrStyle">
 		
 		<main style="width:1903px; height:2500px">
 			<!-- 左邊作者欄 -->
@@ -158,12 +158,14 @@
 				<div class="introduceText">Studying:HTML CSS JavaScript JQuery Java C# SQL Android</div>
 				<div class="introduceText">Follow Me:</div>
 				<a href="https://www.facebook.com/profile.php?id=100004000341204">
-					<img id="fbIcon" src="element/FacebookIcon.jpg" class="iconStyle"/>
+					<img id="fbIcon" src="element/FacebookIcon.png" class="iconStyle"/>
 				</a>
 				<a href="https://www.instagram.com/ap93505/?hl=zh-tw">
-					<img id="igIcon" src="element/InstrgramIcon.jpg" class="iconStyle"/>
+					<img id="igIcon" src="element/InstrgramIcon.png" class="iconStyle"/>
 				</a>
-				<audio id="audio" src="element/audio.mp3" style="margin-top:30px; preload:none;" controls>Your browser does not support the audio element.</audio>
+				<div style="text-align:center; width:100%;">
+					<audio id="audio" src="element/audio.mp3" style="width:90%; margin:30px auto; preload:none;" controls>Your browser does not support the audio element.</audio>
+				</div>
 			</div>
 			<!-- 右邊資料區 -->
 			<iframe id="mainDocument" src="Homepage.html" class="iframeStyle"></iframe>
