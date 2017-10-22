@@ -69,6 +69,7 @@ function AnimationA(){
 function AnimationB(){
 	var box=document.getElementById("indexAnimation");
 	box.style.width="1903px";
+	box.style.left="0px";
 }
 function AnimationC(){
 	var box=document.getElementById("indexAnimation");
