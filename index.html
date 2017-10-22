@@ -16,10 +16,13 @@
 			background-color:black; 
 			background-image:url('element/all will be with you.jpg');
 		}
+		.titleTextbox{
+			width:15%; 
+			padding-top:180px; 
+			margin-left:auto; 
+			margin-right:4%;
+		}
 		.titleText{
-			width:250px;
-			margin-left:auto;
-			margin-right:110px;
 			color:white;
 			font-size:30px;
 			font-weight:bold;
@@ -57,41 +60,38 @@
 		.indexItem{
 			width:100px;
 			height:30px;
-			margin-left:50px; 
-			margin-top:5px; 
+			margin:5px 1.5%; 
 			background-color:#5599FF;
 			border-radius:20px;
 			display:inline-block;
+			line-height:30px;
 			text-align:center;
 			font-weight:bold;
-			line-height:30px;
 			cursor:pointer;
 			opacity:0;
 			transition:background-color 1s, opacity 1s;
 		}
 		.introduceStyle{
-			width:300px; 
+			width:16%; 
 			height:2500px; 
 			float:left; 
 			background-image:url("element/water.jpg");
 		}
 		.introduceText{
-			width:250px; 
-			height:20px; 
+			width:85%;
+			margin:25px 7.5%;
 			color:white; 
 			font-weight:bold; 
 			font-size:15px; 
-			padding:25px;
 		}
 		.iconStyle{
 			width:50px; 
-			height:50px; 
 			border-style:none; 
-			margin-left:30px;
+			margin-left:7.5%;
 			transition:opacity 0.5s;
 		}
 		.iframeStyle{
-			width:1603px; 
+			width:84%; 
 			height:2500px;
 			clear:both; 
 			scrolling:no; 
@@ -116,31 +116,19 @@
 		</style>
 	</head>
 
-	<body style="margin:0px; background-color:#eeeeee;">
-		<div>
-			<div id="indexAnimation" class="indexAnimation"></div>
-			<div class="titleImg">
-				<div style="padding-top:180px;">
-					<div class="titleText">YoChen's</div>
-					<div class="titleText">Animation Center</div>
-				</div>
-			</div>
-			<div id="indexFixed" class="indexFixed">
-				<ul>
-					<li style="padding:5px;" onclick="clickIndex(1);">Homepage</li>
-					<li style="padding:5px;" onclick="clickIndex(2);">Introduction</li>
-					<li style="padding:5px;" onclick="clickIndex(3);">Gallery</li>
-					<li style="padding:5px;" onclick="clickIndex(4);">Contact Me</li>
-					<li style="padding:5px;" onclick="clickIndex(5);">JQuery-UI</li>
-					<li style="padding:5px;" onclick="clickIndex(6);">Bookstrap</li>
-				</ul>
+	<body style="margin:0px; background-color:#eeeeee;">	
+		<!--title-->
+		<div class="titleImg">
+			<div class="titleTextbox">
+				<div class="titleText">YoChen's</div>
+				<div class="titleText">Animation Center</div>
 			</div>
 		</div>
 		<hr class="hrStyle">
 		
-		<!-- 標題列 -->
+		<!--index-->
 		<div id="indexSet" class="indexSet">
-			<div id="index1" onclick="clickIndex(1);" class="indexItem" style="margin-left:20px;">Homepage</div>
+			<div id="index1" onclick="clickIndex(1);" class="indexItem" style="margin-left:1%;">Homepage</div>
 			<div id="index2" onclick="clickIndex(2);" class="indexItem">Introduction</div>
 			<div id="index3" onclick="clickIndex(3);" class="indexItem">Gallery</div>
 			<div id="index4" onclick="clickIndex(4);" class="indexItem">Contact Me</div>
@@ -149,30 +137,50 @@
 		</div>
 		<hr class="hrStyle">
 		
+		<!--main-->
 		<main style="width:1903px; height:2500px">
-			<!-- 左邊作者欄 -->
+			<!--introduce-->
 			<div class="introduceStyle">
 				<div class="introduceText">Editer Information:</div>
-				<img src="element/大頭照3.jpg" style="width:200px; height:200px; padding-left:25px;"/>
+				<div style="text-align:center;">
+					<img src="element/大頭照3.jpg" style="width:80%;"/>
+				</div>
 				<div class="introduceText">Graduated from National Chung Cheng University</div>
 				<div class="introduceText">Department of Information management</div>
 				<div class="introduceText">Studying:HTML CSS JavaScript JQuery Java C# SQL Android</div>
 				<div class="introduceText">Follow Me:</div>
-				<a href="https://www.facebook.com/profile.php?id=100004000341204">
-					<img id="fbIcon" src="element/FacebookIcon.png" class="iconStyle"/>
-				</a>
-				<a href="https://www.instagram.com/ap93505/?hl=zh-tw">
-					<img id="igIcon" src="element/InstrgramIcon.png" class="iconStyle"/>
-				</a>
-				<div style="text-align:center; width:100%;">
-					<audio id="audio" src="element/audio.mp3" style="width:90%; margin:30px auto; preload:none;" controls>Your browser does not support the audio element.</audio>
+				<div>
+					<a href="https://www.facebook.com/profile.php?id=100004000341204">
+						<img id="fbIcon" src="element/FacebookIcon.png" class="iconStyle"/>
+					</a>
+					<a href="https://www.instagram.com/ap93505/?hl=zh-tw">
+						<img id="igIcon" src="element/InstrgramIcon.png" class="iconStyle"/>
+					</a>
+				</div>
+				<div style="text-align:center;">
+					<audio id="audio" src="element/audio.mp3" style="width:90%; margin:25px auto; preload:none;" controls>Your browser does not support the audio element.</audio>
 				</div>
 			</div>
-			<!-- 右邊資料區 -->
+			<!--Document-->
 			<iframe id="mainDocument" src="Homepage.html" class="iframeStyle"></iframe>
 		</main>
 		
 		<footer class="footerStyle">edit by YoChen</footer>
+		
+		<!--fixed index-->
+		<div id="indexFixed" class="indexFixed">
+			<ul>
+				<li style="padding:5px;" onclick="clickIndex(1);">Homepage</li>
+				<li style="padding:5px;" onclick="clickIndex(2);">Introduction</li>
+				<li style="padding:5px;" onclick="clickIndex(3);">Gallery</li>
+				<li style="padding:5px;" onclick="clickIndex(4);">Contact Me</li>
+				<li style="padding:5px;" onclick="clickIndex(5);">JQuery-UI</li>
+				<li style="padding:5px;" onclick="clickIndex(6);">Bookstrap</li>
+			</ul>
+		</div>
+		
+		<!--indexAnimation-->
+		<div id="indexAnimation" class="indexAnimation"></div>
 	</body>
 
 </html>
