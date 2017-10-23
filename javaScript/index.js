@@ -60,7 +60,6 @@ function clickIndex(clickWhat){
 	}else if(clickWhat==6){
 		thing.src="Bootstrap.html";
 	}
-	thing.scrolling="no"; 
 }
 function AnimationA(){
 	var box=document.getElementById("indexAnimation");

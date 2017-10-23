@@ -1,0 +1,209 @@
+body{
+	margin:0px;
+	background-color:#eeeeee;
+}
+main{
+	width:1903px;
+	height:3000px;
+}
+footer{
+	width:1903px;
+	height:30px;
+	background-color:#666666;
+	text-align:right;
+	line-height:30px;
+	font-weight:bold;
+	clear:both;
+}
+hr{
+	margin:3px;
+}
+h1{
+	margin-top:50px;
+	text-align:center;
+	color:blue;
+	font-weight:bolder;
+}
+h2{
+	color:#5500FF;
+	display:inline-block;
+}
+h3{
+	color:red;
+	font-size:20px;
+}
+button{
+	width:150px;
+	margin-left:50px;
+	border-radius:15px;
+	cursor:pointer;
+	font-size:20px;
+	font-weight:bold;
+}
+table{
+	border:0px; 
+	margin-left:auto; 
+	margin-right:auto;
+	text-align:center;
+}
+table img{
+	width:600px;
+	border:3px solid #cccccc;
+}
+iframe{
+	width:84%; 
+	height:3000px;
+	clear:both; 
+	border:0px;
+}
+canvas{
+	border:2px solid black;
+	margin-left:150px;
+	margin-top:30px;
+}
+
+.titleImg{
+	width:1903px;
+	height:250px;
+	background-color:black; 
+	background-image:url("../element/all will be with you.jpg");
+}
+.titleTextbox{
+	width:15%; 
+	padding-top:180px; 
+	margin-left:auto; 
+	margin-right:4%;
+}
+.titleText{
+	color:white;
+	font-size:30px;
+	font-weight:bold;
+}
+.indexAnimation{
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:3250px;
+	left:1863px;
+	background-color:#5599FF;
+	border-radius:15px;
+	box-shadow:3px 3px 5px black;
+	transition:width 0.5s, height 0.5s, left 0.5s, top 0.5s, visibility 0.5s;
+}
+.indexFixed{
+	width:150px;
+	position:fixed;
+	top:0px;
+	right:0px;
+	background-color:#FFB7DD;
+	border-radius:15px;
+	cursor:pointer;
+	box-shadow:3px 3px 5px black;
+}
+.indexSet{
+	width:1903px;
+	height:40px;
+	background-color:#5599FF;
+	border-radius:15px;
+	box-shadow:3px 3px 5px black;
+	opacity:0;
+	transition:opacity 0.5s;
+}
+.indexItem{
+	width:100px;
+	height:30px;
+	margin:5px 1.5%; 
+	background-color:#5599FF;
+	border-radius:20px;
+	display:inline-block;
+	line-height:30px;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+	opacity:0;
+	transition:background-color 1s, opacity 1s;
+}
+.introduceStyle{
+	width:16%; 
+	height:3000px; 
+	float:left;
+	background-image:url("../element/water.jpg");
+}
+.introduceText{
+	width:85%;
+	margin:25px 7.5%;
+	color:white; 
+	font-weight:bold; 
+	font-size:15px; 
+}
+.introduceIcon{
+	width:50px; 
+	border-style:none; 
+	margin-left:7.5%;
+	transition:opacity 0.5s;
+}
+.titleStyle{
+	color:red;
+	margin-top:100px;
+	margin-bottom:30px;
+	margin-left:100px;
+	font-size:20px;
+	font-weight:bold;
+}
+.divStyle{
+	width:80%;
+	margin:0px auto;
+	clear:both;
+}
+.divIn{
+	display:inline-block; 
+	vertical-align:top;
+}
+
+#transformBox{
+	width:100px;
+	height:100px;
+	border:2px solid black;
+	background-color:#5599FF;
+	margin-left:150px;
+	margin-top:100px;
+	transition:transform 0.2s;
+}
+#animationBox1{
+	width:100px;
+	height:100px;
+	border:2px solid black;
+	background-color:#D1BBFF;
+	margin-left:150px;
+	margin-top:50px;
+	display:inline-block; 
+	vertical-align:top;
+	animation:blink 3s infinite;		
+}
+#animationBox2{
+	width:100px;
+	height:100px;
+	border:2px solid black;
+	background-color:#D1BBFF;
+	margin-left:150px;
+	margin-top:50px;
+	display:inline-block; 
+	vertical-align:top;
+	position:relative;
+	animation:move 5s infinite alternate;
+}
+#hintText{
+	color:black; 
+	font-size:10px; 
+	visibility:hidden;
+}
+
+@keyframes blink{
+	0%{opacity:1}
+	50%{opacity:0.1}
+	100%{opacity:1}
+}
+@keyframes move{
+	0%{left:0%}
+	100%{left:60%}
+}

@@ -7,113 +7,11 @@
 		
 		<title>Animation Forever</title>
 		
+		<link rel="stylesheet" type="text/css" href="css/webProgramming.css">
+		
 		<script type="text/javaScript" src="javaScript/index.js"></script>
 		
 		<style type="text/css">
-		.titleImg{
-			width:1903px;
-			height:250px;
-			background-color:black; 
-			background-image:url('element/all will be with you.jpg');
-		}
-		.titleTextbox{
-			width:15%; 
-			padding-top:180px; 
-			margin-left:auto; 
-			margin-right:4%;
-		}
-		.titleText{
-			color:white;
-			font-size:30px;
-			font-weight:bold;
-		}
-		.indexAnimation{
-			width:40px;
-			height:40px;
-			position:absolute;
-			top:3250px;
-			left:1863px;
-			background-color:#5599FF;
-			border-radius:15px;
-			box-shadow:3px 3px 5px black;
-			transition:width 0.5s, height 0.5s, left 0.5s, top 0.5s, visibility 0.5s;
-		}
-		.indexFixed{
-			width:150px;
-			position:fixed;
-			top:0px;
-			right:0px;
-			background-color:#FFB7DD;
-			border-radius:15px;
-			cursor:pointer;
-			box-shadow:3px 3px 5px black;
-		}
-		.indexSet{
-			width:1903px;
-			height:40px;
-			background-color:#5599FF;
-			border-radius:15px;
-			box-shadow:3px 3px 5px black;
-			opacity:0;
-			transition:opacity 0.5s;
-		}
-		.indexItem{
-			width:100px;
-			height:30px;
-			margin:5px 1.5%; 
-			background-color:#5599FF;
-			border-radius:20px;
-			display:inline-block;
-			line-height:30px;
-			text-align:center;
-			font-weight:bold;
-			cursor:pointer;
-			opacity:0;
-			transition:background-color 1s, opacity 1s;
-		}
-		.mainStyle{
-			width:1903px;
-			height:3000px;
-		}
-		.introduceStyle{
-			width:16%; 
-			height:3000px; 
-			float:left;
-			background-image:url("element/water.jpg");
-		}
-		.introduceText{
-			width:85%;
-			margin:25px 7.5%;
-			color:white; 
-			font-weight:bold; 
-			font-size:15px; 
-		}
-		.iconStyle{
-			width:50px; 
-			border-style:none; 
-			margin-left:7.5%;
-			transition:opacity 0.5s;
-		}
-		.iframeStyle{
-			width:84%; 
-			height:3000px;
-			clear:both; 
-			scrolling:no; 
-			border:0px;
-		}
-		.hrStyle{
-			margin:3px;
-		}
-		.footerStyle{
-			width:1903px;
-			height:30px;
-			background-color:#666666;
-			text-align:right;
-			line-height:30px;
-			font-weight:bold;
-			clear:both;
-		}
-		
 		@media screen and (max-width:600px){
 			.indexSet{
 			
@@ -122,7 +20,7 @@
 		</style>
 	</head>
 
-	<body style="margin:0px; background-color:#eeeeee;">	
+	<body>	
 		<!--title-->
 		<div class="titleImg">
 			<div class="titleTextbox">
@@ -130,7 +28,7 @@
 				<div class="titleText">Animation Center</div>
 			</div>
 		</div>
-		<hr class="hrStyle">
+		<hr>
 		
 		<!--index-->
 		<div id="indexSet" class="indexSet">
@@ -141,10 +39,10 @@
 			<div id="index5" onclick="clickIndex(5);" class="indexItem">JQuery-UI</div>
 			<div id="index6" onclick="clickIndex(6);" class="indexItem">Bootstrap</div>
 		</div>
-		<hr class="hrStyle">
+		<hr>
 		
 		<!--main-->
-		<main class="mainStyle">
+		<main>
 			<!--introduce-->
 			<div class="introduceStyle">
 				<div class="introduceText">Editer Information:</div>
@@ -157,10 +55,10 @@
 				<div class="introduceText">Follow Me:</div>
 				<div>
 					<a href="https://www.facebook.com/profile.php?id=100004000341204">
-						<img id="fbIcon" src="element/FacebookIcon.png" class="iconStyle"/>
+						<img id="fbIcon" src="element/FacebookIcon.png" class="introduceIcon"/>
 					</a>
 					<a href="https://www.instagram.com/ap93505/?hl=zh-tw">
-						<img id="igIcon" src="element/InstrgramIcon.png" class="iconStyle"/>
+						<img id="igIcon" src="element/InstrgramIcon.png" class="introduceIcon"/>
 					</a>
 				</div>
 				<div style="text-align:center;">
@@ -168,10 +66,10 @@
 				</div>
 			</div>
 			<!--Document-->
-			<iframe id="mainDocument" src="Homepage.html" class="iframeStyle"></iframe>
+			<iframe id="mainDocument" src="Homepage.html"></iframe>
 		</main>
 		
-		<footer class="footerStyle">
+		<footer>
 			<div style="margin-right:1%;">edit by YoChen</div>
 		</footer>
 		

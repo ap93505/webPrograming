@@ -5,119 +5,40 @@
 		<meta charset="utf-8"></meta>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		
+		<link rel="stylesheet" type="text/css" href="css/webProgramming.css">
+		
 		<script type="text/javaScript" src="javaScript/Homepage.js"></script>
-		
-		<style type="text/css">
-		.divStyle{
-			width:80%;
-			margin:0px auto;
-		}
-		.h1Style{
-			margin-top:50px;
-			text-align:center;
-			color:blue;
-			font-weight:bolder;
-		}
-		.titleStyle{
-			color:red;
-			margin-top:100px;
-			margin-bottom:30px;
-			margin-left:100px;
-			font-size:20px;
-			font-weight:bold;
-		}
-		.buttonStyle{
-			width:150px;
-			margin-left:50px;
-			border-radius:15px;
-			cursor:pointer;
-			font-size:20px;
-			font-weight:bold;
-		}
-		.boxStyle{
-			width:100px;
-			height:100px;
-			border:2px solid black;
-			background-color:#5599FF;
-			margin-left:150px;
-			margin-top:100px;
-			transition:transform 0.2s;
-		}
-		.canvasStyle{
-			border:2px solid black;
-			margin-left:150px;
-			margin-top:30px;
-		}
-		.hintStyle{
-			color:black; 
-			font-size:10px; 
-			visibility:hidden;
-		}
-		.box2Style{
-			width:100px;
-			height:100px;
-			border:2px solid black;
-			background-color:#D1BBFF;
-			margin-left:150px;
-			margin-top:50px;
-			display:inline-block; 
-			vertical-align:top;
-			animation:blink 3s infinite;		
-		}
-		.box3Style{
-			width:100px;
-			height:100px;
-			border:2px solid black;
-			background-color:#D1BBFF;
-			margin-left:150px;
-			margin-top:50px;
-			display:inline-block; 
-			vertical-align:top;
-			position:relative;
-			animation:move 5s infinite alternate;
-		}
-		
-		@keyframes blink{
-			0%{opacity:1}
-			50%{opacity:0.1}
-			100%{opacity:1}
-		}
-		@keyframes move{
-			0%{left:0%}
-			100%{left:60%}
-		}
-		</style>
 	</head>
 	
-	<body style="margin:0px; background-color:#eeeeee;">
-		<h1 class="h1Style">Front-End Develope網頁前端工程實作測試</h1>
+	<body>
+		<h1>Front-End Develope網頁前端工程實作測試</h1>
 		
 		<!--Transform線性轉換-->
 		<div class="divStyle">
 			<div class="titleStyle" style="margin-top:20px;">Transform線性轉換</div>	
-			<button id="trans1" class="buttonStyle">位移translate</button>
-			<button id="trans2" class="buttonStyle">縮放scale</button>
-			<button id="trans3" class="buttonStyle">旋轉rotate</button>
-			<button id="trans4" class="buttonStyle">歪斜skew</button>
-			<button id="trans5" class="buttonStyle">prototype</button>
-			<div id="transformBox" class="boxStyle"></div>
+			<button id="trans1">位移translate</button>
+			<button id="trans2">縮放scale</button>
+			<button id="trans3">旋轉rotate</button>
+			<button id="trans4">歪斜skew</button>
+			<button id="trans5">prototype</button>
+			<div id="transformBox"></div>
 		</div>
 		
 		<!--Canvas繪圖-->
 		<div class="divStyle">
 			<div class="titleStyle">Canvas繪圖</div>
-			<button id="canvasButton" class="buttonStyle">開始繪圖</button>
-			<span id="hintText" class="hintStyle">**使用上下左右進行繪圖，或按ESC離開繪圖功能</span>
+			<button id="canvasButton">開始繪圖</button>
+			<span id="hintText">**使用上下左右進行繪圖，或按ESC離開繪圖功能</span>
 			<div>
-				<canvas id="canvasTable" width="800px" height="800px" class="canvasStyle"></canvas>
+				<canvas id="canvasTable" width="800px" height="800px"></canvas>
 			</div>
 		</div>
 		
 		<!--animation動畫製作-->
 		<div class="divStyle">
 			<div class="titleStyle">animation動畫製作</div>
-			<div id="box2" class="box2Style"></div>
-			<div id="box2" class="box3Style"></div>
+			<div id="animationBox1"></div>
+			<div id="animationBox2"></div>
 		</div>
 		
 		<!--video影音撥放-->
