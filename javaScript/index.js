@@ -31,8 +31,8 @@ window.onload=function(){
 	igIcon.addEventListener("mouseout",iconOut);
 	
 	var box=document.getElementById("indexAnimation");
-	box.style.top="257px";
-	box.style.height="1243px";
+	box.style.top="258px";
+	box.style.height="1242px";
 	
 	window.setTimeout(AnimationA, 500);
 	window.setTimeout(AnimationB, 1000);
@@ -58,7 +58,7 @@ function clickIndex(clickWhat){
 	}else if(clickWhat==5){
 		thing.src="JQuery-ui.html";
 	}else if(clickWhat==6){
-		thing.src="Bookstrap.html";
+		thing.src="Bootstrap.html";
 	}
 	thing.scrolling="no"; 
 }

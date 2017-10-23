@@ -31,7 +31,7 @@
 			width:40px;
 			height:40px;
 			position:absolute;
-			top:1500px;
+			top:3250px;
 			left:1863px;
 			background-color:#5599FF;
 			border-radius:15px;
@@ -71,9 +71,13 @@
 			opacity:0;
 			transition:background-color 1s, opacity 1s;
 		}
+		.mainStyle{
+			width:1903px;
+			height:3000px;
+		}
 		.introduceStyle{
 			width:16%; 
-			height:2500px; 
+			height:3000px; 
 			float:left;
 			background-image:url("element/water.jpg");
 		}
@@ -92,7 +96,7 @@
 		}
 		.iframeStyle{
 			width:84%; 
-			height:2500px;
+			height:3000px;
 			clear:both; 
 			scrolling:no; 
 			border:0px;
@@ -101,9 +105,11 @@
 			margin:3px;
 		}
 		.footerStyle{
-			height:20px;
+			width:1903px;
+			height:30px;
 			background-color:#666666;
 			text-align:right;
+			line-height:30px;
 			font-weight:bold;
 			clear:both;
 		}
@@ -133,12 +139,12 @@
 			<div id="index3" onclick="clickIndex(3);" class="indexItem">Gallery</div>
 			<div id="index4" onclick="clickIndex(4);" class="indexItem">Contact Me</div>
 			<div id="index5" onclick="clickIndex(5);" class="indexItem">JQuery-UI</div>
-			<div id="index6" onclick="clickIndex(6);" class="indexItem">Bookstrap</div>
+			<div id="index6" onclick="clickIndex(6);" class="indexItem">Bootstrap</div>
 		</div>
 		<hr class="hrStyle">
 		
 		<!--main-->
-		<main style="width:1903px; height:2500px">
+		<main class="mainStyle">
 			<!--introduce-->
 			<div class="introduceStyle">
 				<div class="introduceText">Editer Information:</div>
@@ -165,7 +171,9 @@
 			<iframe id="mainDocument" src="Homepage.html" class="iframeStyle"></iframe>
 		</main>
 		
-		<footer class="footerStyle">edit by YoChen</footer>
+		<footer class="footerStyle">
+			<div style="margin-right:1%;">edit by YoChen</div>
+		</footer>
 		
 		<!--fixed index-->
 		<div id="indexFixed" class="indexFixed">
@@ -175,7 +183,7 @@
 				<li style="padding:5px;" onclick="clickIndex(3);">Gallery</li>
 				<li style="padding:5px;" onclick="clickIndex(4);">Contact Me</li>
 				<li style="padding:5px;" onclick="clickIndex(5);">JQuery-UI</li>
-				<li style="padding:5px;" onclick="clickIndex(6);">Bookstrap</li>
+				<li style="padding:5px;" onclick="clickIndex(6);">Bootstrap</li>
 			</ul>
 		</div>
 		
