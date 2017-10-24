@@ -48,6 +48,7 @@ table{
 }
 table img{
 	width:600px;
+	height:auto;
 	border:3px solid #cccccc;
 }
 iframe{
@@ -78,17 +79,6 @@ canvas{
 	color:white;
 	font-size:30px;
 	font-weight:bold;
-}
-.indexAnimation{
-	width:40px;
-	height:40px;
-	position:absolute;
-	top:3250px;
-	left:1863px;
-	background-color:#5599FF;
-	border-radius:15px;
-	box-shadow:3px 3px 5px black;
-	transition:width 0.5s, height 0.5s, left 0.5s, top 0.5s, visibility 0.5s;
 }
 .indexFixed{
 	width:150px;
@@ -138,6 +128,7 @@ canvas{
 }
 .introduceIcon{
 	width:50px; 
+	height:auto;
 	border-style:none; 
 	margin-left:7.5%;
 	transition:opacity 0.5s;
@@ -160,6 +151,17 @@ canvas{
 	vertical-align:top;
 }
 
+#indexAnimation{
+	width:40px;
+	height:40px;
+	position:absolute;
+	top:3250px;
+	left:1863px;
+	background-color:#5599FF;
+	border-radius:15px;
+	box-shadow:3px 3px 5px black;
+	transition:width 0.5s, height 0.5s, left 0.5s, top 0.5s, visibility 0.5s;
+}
 #transformBox{
 	width:100px;
 	height:100px;
