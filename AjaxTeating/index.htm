@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ajax測試</title>
+		<script type="text/javascript">
+		function getData(page){
+			var req=new XMLHttpRequest();
+			req.open("get","http://127.0.0.1/"+page);
+			req.onload=function(){
+				var textIn=document.getElementById("textIn");
+				textIn.innerHTML=this.responseText;
+			};
+			req.send();
+		}
+		</script>
+	</head>
+	<body>
+		<div>Open the folder</div>
+		<button onclick="getData('page1.htm')">page1</button>
+		<button onclick="getData('page2.htm')">page2</button>
+		<hr>
+		<div id="textIn"></div>
+	</body>
+</html>
