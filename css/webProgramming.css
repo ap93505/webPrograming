@@ -13,7 +13,6 @@ footer{
 	text-align:right;
 	line-height:30px;
 	font-weight:bold;
-	clear:both;
 }
 hr{
 	margin:3px;
@@ -54,7 +53,7 @@ table img{
 iframe{
 	width:84%; 
 	height:3000px;
-	clear:both; 
+	float:left;
 	border:0px;
 }
 canvas{
